@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Blockchain.com</title>
+    <style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-container {
+            display: flex;
+            background-color: rgb(7, 7, 164);
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flex-container > div {
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+        }
+        .login-signup-container {
+            display: flex;
+            align-items: center;
+        }
+        .login-button, .signup-button {
+            background-color: rgb(252, 252, 253);
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-left: 10px;
+        }
+        .login-button:hover, .signup-button:hover {
+            background-color: rgb(7, 182, 240);
+        }
+        .background-text {
+            background-color: rgb(7, 7, 164);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+        .background-text p {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .signup-email-button {
+            background-color: rgb(4, 4, 87);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .content-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .content-images img {
+            margin: 10px;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        .site-footer {
+            background-color: #000000;
+            padding: 45px 0 20px;
+            font-size: 15px;
+            line-height: 24px;
+            color: #737373;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        .site-footer hr {
+            border-top-color: #bbb;
+            opacity: 0.5;
+        }
+        .site-footer hr.small {
+            margin: 20px 0;
+        }
+        .site-footer h6 {
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+        .site-footer a {
+            color: #737373;
+        }
+        .site-footer a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-links {
+            padding-left: 0;
+            list-style: none;
+        }
+        .footer-links li {
+            display: block;
+        }
+        .footer-links a {
+            color: #737373;
+        }
+        .footer-links a:active,
+        .footer-links a:focus,
+        .footer-links a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        .social-icons {
+            text-align: right;
+        }
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 6px;
+            margin-right: 0;
+            border-radius: 100%;
+            background-color: #000000;
+        }
+        .app-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .app-icons a {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 991px) {
+            .site-footer [class^="col-"] {
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 767px) {
+            .site-footer {
+                padding-bottom: 0;
+            }
+            .site-footer .copyright-text,
+            .site-footer .social-icons {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>Blockchain.com</div>
+        <div class="d-none d-md-block">Wallet</div>
+        <div class="d-none d-md-block">Exchange</div>  
+        <div class="d-none d-md-block">Explorer</div>
+        <div class="d-none d-md-block">Pay</div>
+        <div class="d-none d-md-block">Institutional</div>
+        <div class="login-signup-container">
+            <img src="search.jpg" width="50" height="50" alt="search Pic">
+            <button class="login-button">Login</button>
+            <button class="signup-button">Sign Up</button>   
+        </div>
+    </div>
+    <div class="background-text">
+        <p>Be early to the future of finance.</p>
+        <p>Buy Bitcoin, Ethereum, and other leading cryptocurrencies on a platform trusted by millions.</p>
+        <button class="signup-email-button">Write Your Email Address</button>
+    </div>
+    <div class="content-images">
+        <img src="bitcoin.jpg" alt="bitcoin Pic">
+        <img src="wallet.jpg" alt="wallet Pic">
+        <img src="exchange.jpg" alt="exchange Pic">
+        <img src="institutional.jpg" alt="Institutional Pic">
+        <img src="explore.jpg" alt="explore Pic">
+        <img src="crypto.jgp.jpg" alt="crypto Pic">
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Blockchain</h6>
+                    <div>Twitter</div>
+                    <div>Instagram</div>
+                    <div>Medium</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Products</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Exchange</a></li>
+                        <li><a href="#">Explorer</a></li>
+                        <li><a href="#">Pay</a></li>
+                        <li><a href="#">Institutional</a></li>
+                        <li><a href="#">Earn</a></li>
+                        <li><a href="#">Card</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">Chart</a></li>
+                        <li><a href="#">NFT</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">APIs</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Open Source</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Legal & Privacy</a></li>
+                        <li><a href="#">Wallet Support</a></li>
+                        <li><a href="#">Exchange Support</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Podcast</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Center</a></li>
+                        <li><a href="#">Prime</a></li>
+                        <li><a href="#">Ventures</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="app-icons">
+                        <a href="https://apps.apple.com/app/id1551353775" style="display: inline-block; overflow: hidden; border-radius: 40px; width: 150px; height: 90px;">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9" alt="Download on the App Store" style="border-radius: 15px; width: 150px; height: 90px;">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.stagescycling.stages">
+                            <img style="width: 164px; margin-top: -30px;" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKpYfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- JavaScript for handling login and sign up buttons -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginButton = document.querySelector(".login-button");
+            const signUpButton = document.querySelector(".signup-button");
+
+            loginButton.addEventListener("click", function() {
+                // Add your login logic here
+                console.log("Login button clicked");
+            });
+
+            signUpButton.addEventListener("click", function() {
+                // Add your sign up logic here
+                console.log("Sign Up button clicked");
+            });
+        });
+    </script>
+
+    <!-- Bootstrap and other JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKpYfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
